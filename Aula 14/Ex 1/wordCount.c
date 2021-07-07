@@ -6,11 +6,12 @@ int main(){
     
     //Limpa buffer
     setbuf(stdin, 0);
-    fgets(x,100,stdin);
+    fgets(x,99,stdin);
 
+    if(x[0]==' ')
+        words--;
     for(int i = 0; i < strlen(x);i++)
-        //if(strcmp(x[i], ' ') == 0) 
-        if(x[i] == ' ' && x[i+1] != ' ')
+        if(x[i] == ' ' && x[i+1] != ' ' && x[i+1] != '\n')
             words++;
 
     if(strlen(x)==1)
