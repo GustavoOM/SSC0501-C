@@ -1,5 +1,5 @@
 #include "../Ex 1/Carro.c"
-#include "stdio.h"
+#include <stdio.h>
 
 int main(){
     struct carros c;
